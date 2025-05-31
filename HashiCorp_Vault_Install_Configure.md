@@ -65,7 +65,13 @@ Logging in: Use the root token obtained during initialization to log in to the V
 ```
 vault login <root_token>
 ```
-Or access the UI at http://127.0.0.1:8200/ui (if tls_disable is true
+Or access the UI at http://127.0.0.1:8200/ui (if tls_disable is true  
+
+
+
+
+![image](https://github.com/user-attachments/assets/be87383b-7b1e-4a0e-8d80-e3a50a276a87)
+
 
 
 
