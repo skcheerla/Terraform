@@ -4,7 +4,7 @@ How to Install Terraform on WSL
 
 1. Open your WSL Ubuntu terminal and run
 
-   '''bash
+   '''  
    sudo apt update && sudo apt install -y gnupg software-properties-common curl
    '''
    
