@@ -70,7 +70,17 @@ Or access the UI at http://127.0.0.1:8200/ui (if tls_disable is true
 
 
 
-![image](https://github.com/user-attachments/assets/be87383b-7b1e-4a0e-8d80-e3a50a276a87)
+![image](https://github.com/user-attachments/assets/be87383b-7b1e-4a0e-8d80-e3a50a276a87)  
+
+  
+  
+  ![image](https://github.com/user-attachments/assets/4774edb7-3e40-4b08-a923-7551109e4add) 
+
+
+  API PATH :  /v1/secret/data/my-app/aws-prod-keys
+
+ CLI PATH :  -mount="secret" "my-app/aws-prod-keys"
+
 
 
 
