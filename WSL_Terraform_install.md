@@ -11,7 +11,7 @@ wsl --install
 2. After the Installation Connect to Ubuntu Machine with the below command
 
 ```
-wsl -d ubunutu
+wsl -d ubuntu
 ```
 
 # Terraform Installation Instruction on WSL Based Ubuntu Machine  
