@@ -44,6 +44,29 @@ Starting the Vault server:
 ```
 vault server -config=vault.hcl
 ```
+(For development, you can use vault server -dev for a quick, insecure, in-memory instance.)
+
+Initializing Vault: This is a one-time process that generates the master key and initial root token. You'll need to provide a certain number of "key shares" and a "key threshold."  
+
+```
+vault operator init
+```
+IMPORTANT: Securely save the unseal keys and the root token! These are critical for managing your Vault instance.
+Unsealing Vault: After initialization, Vault is "sealed" for security. You need to provide a quorum of unseal keys to unseal it and make it operational.
+
+```
+vault operator unseal <unseal_key_1>
+vault operator unseal <unseal_key_2>
+# ... and so on until the threshold is met
+```
+
+Logging in: Use the root token obtained during initialization to log in to the Vault CLI or UI:
+
+```
+vault login <root_token>
+```
+Or access the UI at http://127.0.0.1:8200/ui (if tls_disable is true
+
 
 
 
