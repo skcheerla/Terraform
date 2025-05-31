@@ -31,11 +31,22 @@ listener "tcp" {
 }
 
 storage "file" {
-  path = "/vault/data" # Create this directory
+  path = "/opt/vault/data" # Create this directory
 }
 
 disable_mlock = true # For dev only, enable mlock for production for security
 ```
+
+Creating a data directory: The storage "file" backend requires a directory to store Vault's data.
+
+Starting the Vault server:
+
+```
+vault server -config=vault.hcl
+```
+
+
+
 
 
 
